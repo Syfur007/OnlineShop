@@ -4,7 +4,25 @@
     box-sizing: border-box;
 }
 
-.logo{
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+
+/* Header */
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color: #2C497F;
+}
+
+.logo {
     display: flex;
     align-items: center;
     padding: 10px;
@@ -13,25 +31,18 @@
 .logo i {
     font-size: 30px;
     margin-right: 15px;
+    color: #fff;
 }
 
-.header-container h1{
+.header-container h1 {
     font-size: 30px;
     width: 100%;
     text-align: center;
+    color: #fff;
 }
-.header-container{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding-left: 20px;
-    padding-right: 20px;
-    background-color: #bfc9ca ;
-}
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f9f9f9;
-    color: #333;
+
+.header-container .contact-info {
+    color: #fff;
 }
 
 .header {
@@ -39,7 +50,7 @@ body {
     justify-content: space-around;
     align-items: center;
     background-color: #333;
-    padding: 10px 20px;
+    padding: 20px;
     color: #fff;
 }
 
@@ -54,6 +65,11 @@ body {
 
 .header .navbar ul li {
     margin: 0 15px;
+    border-bottom: 2px solid #333;
+}
+
+.header .navbar ul li:hover {
+    border-bottom: 2px solid #fff;
 }
 
 .header .navbar ul li a {
@@ -64,6 +80,9 @@ body {
 .header .contact-info {
     font-size: 0.9rem;
 }
+
+
+/* Banner */
 
 .banner {
     background-color: #2C497F;
@@ -82,7 +101,7 @@ body {
 
 .banner .shop-now {
     background-color: white;
-    color: #2C497F ;
+    color: #2C497F;
     border: none;
     border-radius: 9px;
     padding: 10px 20px;
@@ -94,6 +113,9 @@ body {
     background-color: #333;
     color: white;
 }
+
+
+/* Features */
 
 .features {
     display: flex;
@@ -107,10 +129,23 @@ body {
     width: 20%;
 }
 
+.feature div {
+    display: inline-flex;
+}
+
+.feature i {
+    font-size: 20px;
+    margin-right: 10px;
+    color: #27ae60;
+}
+
 .features .feature h3 {
     color: rgb(0, 0, 0);
     margin-bottom: 10px;
 }
+
+
+/* Products */
 
 .products {
     padding: 40px 20px;
@@ -163,10 +198,10 @@ body {
 
 .buy-now {
     width: fit-content;
-    border: 2px solid #2C497F;
+    border: 2px solid #27ae60;
     border-radius: 20px;
     padding: 10px 20px;
-    background-color: #2C497F;
+    background-color: #27ae60;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -207,7 +242,7 @@ body {
     color: #fff;
     border: none;
     padding: 10px;
-    
+
 }
 
 .product button:hover {
